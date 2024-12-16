@@ -1,0 +1,70 @@
+{% extends "network/layout.html" %}  
+
+{% block title %}Your Meal Plan Results{% endblock %}  
+
+{% block body %}  
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Meal Plan</title>  
+    <style>  
+        
+        h1 {  
+            text-align: center;  
+            color: #333;  
+        }  
+        .meal-container {  
+            display: flex;  
+            flex-wrap: wrap;  
+            justify-content: center;  
+            gap: 20px;  
+        }  
+        .meal-card {  
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for card background */  
+            border-radius: 8px;  
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+            width: 300px;  
+            overflow: hidden;  
+            text-align: center;  
+        }  
+        .meal-card img {  
+            width: 100%;  
+            height: auto;  
+        }  
+        .meal-card h2 {  
+            font-size: 1.5rem;  
+            margin: 10px 0;  
+            color: #333;  
+        }  
+        .meal-card p {  
+            font-size: 1rem;  
+            margin: 5px 0;  
+            color: #555;  
+        }  
+        .ingredients {  
+            font-size: 0.9rem;  
+            color: #777;  
+            margin: 10px 0;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>Your Meal Plan </h1>  
+    <p>Total Daily Calories: {{ daily_calories }}</p>  
+    <div class="meal-container">  
+        {% for meal in meal_plan %}  
+            <div class="meal-card">   
+                <h2>{{ meal.type }}</h2>  
+                <h2>{{ meal.title }}</h2>  
+                <img src="{{ meal.image }}" alt="{{ meal.title }}">  
+                <p>{{ meal.calories }} calories</p>  
+                <p class="ingredients">Ingredients: {{ meal.ingredients|join:", " }}</p>  
+            </div>  
+        {% endfor %}  
+    </div>  
+</body>  
+</html>  
+{% endblock %}
+
