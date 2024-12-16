@@ -2,7 +2,7 @@
 # Capstone Project: Balanced Meal Plan Web Application 
 CS50 finall Project
 
-The project's video:
+The project's video:https://youtu.be/D2w0Xxsjjao?si=q9TcsFXTJ73wzOe3
 
 ## Overview  
 The Balanced Meal Plan web application is designed to help users achieve their nutritional goals by providing personalized meal plans based on their individual needs. The application features user authentication with login, registration, and logout functionalities. Once logged in, users can fill out a form that collects important information such as gender, weight, height, age, and activity level. Based on this data, the app calculates the user's  daily caloric requirements (Basal Metabolic Rate - BMR). Utilizing the Spoonacular API, the application generates a balanced meal plan that includes recipes for breakfast, lunch, dinner, and snacks that align with the user’s calorie needs.  
