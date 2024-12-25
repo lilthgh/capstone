@@ -1,0 +1,37 @@
+/* layout.css */  
+
+/* Navbar styles */  
+.navbar {  
+    background-color: #f8f9fa; /* Light background for navbar */  
+    border-bottom: 1px solid #e5e5e5; /* Subtle border at the bottom */  
+}  
+
+.navbar-brand {  
+    font-weight: bold; /* Make brand name bold */  
+    font-size: 1.5rem; /* Increase font size */  
+}  
+
+.nav-link {  
+    color: #007bff; /* Bootstrap primary link color */  
+    transition: color 0.2s ease; /* Smooth transition for hover effects */  
+}  
+
+.nav-link:hover {  
+    color: #0056b3; /* Darker color on hover */  
+}  
+
+/* Body styles */  
+.body {  
+    padding: 20px; /* Add some padding to the body */  
+}  
+
+/* Responsive styles - adjust navbar padding on smaller screens */  
+@media (max-width: 768px) {  
+    .navbar {  
+        padding: 0.5rem 1rem; /* Adjust navbar padding */  
+    }  
+
+    .body {  
+        padding: 10px; /* Decrease body padding on smaller screens */  
+    }  
+}

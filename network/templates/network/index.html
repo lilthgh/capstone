@@ -1,0 +1,25 @@
+{% extends "network/layout.html" %}  
+
+{% block body %}
+
+  <div style="position: relative;background-size: cover;  
+  background-position: center;  
+  height: 100vh; /* Set the background to full viewport height */  
+  position: relative;">
+    <img src="https://themeatclub.com.sg/cdn/shop/articles/Master_the_Art_of_Meal_Planning__Your_Guide_to_a_Healthy_Diet.webp?v=1728453456&width=1100" alt="Sample Image" style="width: 100%; height: auto;">
+    <div style="position: absolute;  
+    top: 50%; /* Center vertically */  
+    left: 50%; /* Center horizontally */  
+    transform: translate(-50%, -50%); /* Adjust for element size */  
+    color: white;  
+    font-size: 24px;  
+    font-weight: bold;  
+    text-align: center;  
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background for text readability */  
+    padding: 20px; /* Add padding around text */  
+    border-radius: 8px;">
+    
+        <p><a href="{% url 'meal_plan' %}">lets get a balanced meal plan</a></p>  
+    </div>
+  </div>
+{% endblock %}
